@@ -20,7 +20,7 @@ section {
     line-height: 22pt;
 
 }
-span {
+span#scrolldown {
     background-color: black;
     color: white;
     padding: 5%;
@@ -29,7 +29,7 @@ span {
 }
 
 /*intro section styles*/
-i.fa-angle-double-down {
+/*i.fa-angle-double-down {
     visibility: hidden;
     margin-left: 30px;
     transition: transform 350ms;
@@ -40,6 +40,7 @@ i.fa-angle-double-down {
     visibility: visible; 
     border-radius: 50px;
 }
+*/
 
 section#intro {
     position: relative;
@@ -90,7 +91,6 @@ section#skills div#skillspara, hr  {
 section#skills div#skillspara:hover hr {
     width: 50%;
 }
-
 /*work section styles*/
 section#work {
     justify-content: center;
