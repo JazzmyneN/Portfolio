@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--TO DO
 
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,69 +11,82 @@
     <link href="index.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Muli&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b32b226647.js" crossorigin="anonymous"></script>
-    <link href = "" type = "image" rel = "icon" />
+    <link href="" type="image" rel="icon" />
     <title>Document</title>
 </head>
 
 <body>
-    <section id="intro">
-        <h1>
-            <span id = "scrolldown">Na</span>me
-            <!--<i class="fas fa-angle-double-down"></i>-->
-        </h1>
-        <p id="subtitle">web developer in training</p>
-        <div id="contactlinks">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        
-    </section>
-    <section id="skills">
-        <div id="skillspara">
-            <h1>Skills 🖥️</h1>
-            <hr />
-            <p>
-                
-            </p>
-        </div>
-        <div id="skillspara">
-            <h1>About Me 👩‍💻</h1>
-            <hr />
-            <p>
-                I'm a web developer in training.
-            </p>
-        </div>
-
-        <div id="skillspara">
-            <h1>Experience 📚</h1>
-            <hr />
-            <p>
-                <ul>
-                    <li>WestMEC Coding Program (2 years)</li>
-                    <li>WestMEC Coding Internship (In Progress)</li>
-                </ul>
-            </p>
-        </div>
-        
-    </section>
-    <section id="work">
+    <header>
+        <section id = "profilecard">
+            <img src = "https://avatars1.githubusercontent.com/u/53586587?s=460&v=4" />
+            <p>Hello, I'm Jazzmyne. I'm a Web Developer in training.</p>
+            <p>Need to contact me? You can find me on LinkedIn and Github.</p>
+        </section>
+    </header>
+    <section class = "wrapper">
+    <nav>
         <ul>
-            <li>cool website</li>
-            <li>cool website</li>
-
-            <li>cool website</li>
-            <li>cool website</li>
+            <li><i class="fas fa-chevron-right"></i><a href = "#skills">skills</a></li>
+            <li><i class="fas fa-chevron-right"></i><a href = "#pastwork">past work</a></li>
+            <li><i class="fas fa-chevron-right"></i><a href = "#aboutme">about me</a></li>
+            <li><i class="fas fa-chevron-right"></i><a href = "#hireme">hire me</a></li>
         </ul>
+    </nav>
+    <div class = "info">
+        <section id = "skills">
+            <div id = "skillsheader">
+                <h1>Skills</h1>
+            </div>
+            <div class = "allskills">
+                <div id = "skillcontain">
+                    <p>Excel</p> 
+                    <p>For creating efficient spreadsheets to sort data for easy retrieval, 
+                    along with automating the more boring parts of life.
+                    </p>  
+                </div>
+                <div id = "skillcontain">
+                    <p>Python 3</p> 
+                    <p>Before HTML/CSS, I learned Python 3. I'm advanced in it, with about 
+                    2-3 years working with it
+                    </p>  
+                </div>
+                <div id = "skillcontain">
+                    <p>HTML/CSS</p> 
+                    <p>I can create websites with extensive CSS and clean HTML. 
+                        This includes advanced HTML and intermediate CSS.
+                    </p>  
+                </div>
+                <div id = "skillcontain">
+                    <p>Object Oriented Programming</p> 
+                    <p>Having learned Python, I have a general knowledge of OOP and can pick
+                        up new programming languages quickly. 
+                    </p>  
+                </div>
+            </div>
+        </section>
+
+        <section id = "pastwork">
+                <h1>Past work</h1>
+                <p>insert super cool and well done past work here</p>
+            <!--insert past work here-->
+        </section>
+        <section id = "aboutme">
+                <h1>About me</h1>
+            <p> I'm a girl who loves technology. I plan on majoring in Computer Science in a college
+                on the West Coast. I'm currently enrolled in WestMec for Coding (with a focus on Web Development). 
+                Along with this, I'm currently in an internship program with Brandon Ching.
+                I'm a quick learner and am always looking for ways to improve.</p>
+        </section>
+        <section id = "hireme">
+                <h1>Hire Me</h1>
+            <p>Like what you saw? hire me to make stuff for you.</p>
+            <form>
+
+            </form>
+        </section>
+    </div>
     </section>
-    <section id="contact">
-        <form>
-            <input id = "name" type="text" name="name" placeholder="name">
-            <input id = "address" type="text" name="address" placeholder="email">
-            <input id = "subject" type="text" name="subject" placeholder="subject">
-            <input id = "email" type="text" name="email" placeholder="">
-            <!--logo/name/job, about me, skills, previous work, contact-->
-        </form>
-    </section>
+    <!--links: logo/name/job, about me, skills, previous work, contact-->
 </body>
 
 </html>
