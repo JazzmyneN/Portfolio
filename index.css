@@ -19,9 +19,10 @@ div#profile h1,div#profile h2,div#profile h3,div#profile h4,div#profile h5 {
     font-size: 3em;
 }
 div#profile {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 45vw;
     margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
@@ -52,11 +53,35 @@ div.submenu li a{
 }
 div.submenu {
     line-height: 25pt;
+   
 }
-div#profile a {
+div#profile div.submenu a {
     color: black;
     text-decoration: none;
     background-color: rgba(255, 191, 72, 0.5);
+}
+div.links a {
+    height: auto;
+    max-height: 50px;
+    position: absolute;
+    margin-right: 0.25em;
+    margin-bottom: -15px;
+    right: 0;
+    bottom: 0;
+    font-size: 3vw;
+    background-color: white;
+    color: black;
+    border-left: 8px solid black;
+    border-top:8px solid black;
+    border-right: 8px solid black;
+    border-bottom: 8px solid white;
+    padding: 10px;
+    transition: max-height 300ms;
+    transition-timing-function: ease-in-out;
+    
+}
+div.links a:hover {
+    max-height: 1.55em;
 }
 a {
     display:inline-block
@@ -77,13 +102,15 @@ nav ul li a {
     5px 5px 0px black,
     6px 6px 0px black,
     7px 7px 0px black;
-    transition: transform 200ms, box-shadow 200ms;
+    transition: transform 300ms, box-shadow 150ms;
+
 }
 
 nav ul {
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 50vw;
     display: flex;
     justify-content: space-evenly;
 }
@@ -100,3 +127,4 @@ nav ul li a:hover {
     9px 9px 0px black,
     10px 10px 0px black;
 }
+
