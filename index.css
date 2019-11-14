@@ -8,17 +8,19 @@ header {
     position: relative;
 }
 header div.submenu {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight : bolder;
     font-size: 1.5em;
     margin-top: 1em;
+    
 }
 div#profile h1,div#profile h2,div#profile h3,div#profile h4,div#profile h5 {
     font-family: 'Palanquin Dark', sans-serif;
     font-style: bold;
-    font-size: 3em;
+    font-size: 2.75em;
 }
 div#profile {
+
     position: relative;
     display: flex;
     flex-direction: column;
@@ -86,6 +88,7 @@ div.links a:hover {
 a {
     display:inline-block
 }
+
 nav ul li a {
     font-family: 'Work Sans', sans-serif;
     font-weight : bolder;
@@ -128,3 +131,9 @@ nav ul li a:hover {
     10px 10px 0px black;
 }
 
+@media only screen and (min-width: 1052px) and (max-width: 1500px) {
+    nav ul li {
+        font-size: 0.75em;
+    }
+
+}
