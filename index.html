@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,91 @@
     <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark|Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
-    <link href = "index.css" rel = "stylesheet" />
-    <link href = "reset.css" rel = "stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="reset.css" rel="stylesheet" />
     <title>Portfolio</title>
 </head>
+
 <body>
     <header>
-        <div id = "profile">
+        <div id="profile">
             <h1>Hello! I'm Jazzmyne N.</h1>
             <h2>I'm a web developer in training.</h2>
 
-            <div class = "submenu">
-                Current endeavors: 
+            <div class="submenu">
+                Current endeavors:
                 <ul>
-                    <li><a href = "https://west-mec.edu/coding/">WestMEC Coding Program</a></li>
-                    <li>Coding Internship w/ <a href = "https://github.com/linuxdream">Brandon Ching</a></li>
+                    <li><a href="https://west-mec.edu/coding/">WestMEC Coding Program</a></li>
+                    <li>Coding Internship w/ <a href="https://github.com/linuxdream">Brandon Ching</a></li>
                 </ul>
             </div>
-            <div class = "links">
-                <a href = "https://github.com/JazzmyneN"><i class="fab fa-github"></i></a>
+            <div class="links">
+                <a href="https://github.com/JazzmyneN"><i class="fab fa-github"></i></a>
             </div>
         </div>
-    
-    <nav>
-        <ul>
-            <li><a href = "https://github.com/JazzmyneN?tab=repositories">Work</a></li>
-            <li><a href = "skillsabout.html">Skills</a></li>
-            <li><a href = "skillsabout.html">About</a></li>
-            <li><a href = "">Contact</a></li>
-        </ul>
-    </nav>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="me">
+            <img src="https://avatars1.githubusercontent.com/u/53586587?s=460&v=4" id="pic" />
+            <p>I'm a student studying computer programming and web development. I plan on getting a 4 year degree in
+                Computer Science.
+                Having worked in an team based internship and classroom, I work well with others and on my own. I also
+                like doing things quickly and correctly the first time. In my free time, I like playing games and drawing.
+
+            </p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills/Knowledge</h2>
+        <dl>
+            <dt>HTML/CSS</dt>
+            <dd>I'm advanced in HTML and CSS, along with other general web development aspects like responsive layouts
+                and website design.</dd>
+
+            <dt>Git</dt>
+            <dd>I know how to work with version control, specifcally git, including pull requests and reviewing commits.
+                This also includes of knowledge of working with other's code.</dd>
+
+            <dt>Python3</dt>
+            <dd>Before web design, I worked with Python. I know how to manuvere object oriented programming and can
+                automate busy work.</dd>
+        </dl>
+    </section>
+
+    <section id="work">
+        <h2>Previous Work</h2>
+        <ul>
+            <li>
+                <a href = "https://jazzmynen.github.io/PokemonProject/index.html"><img src = "pikachu.png"></a>
+                <p>Pokemon Website |
+                In need of a redesign
+                </p>
+            </li>
+            <li>
+                <a href = "https://jazzmynen.github.io/BigDaveChopShop/founded.html"><img src = "bigdave.png"></a>
+                <p>Big Dave's Chop Shop |
+                More recent but still out of date.</p>
+            </li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="First Name"> <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Explain what you'd like done...">
+        </form>
+    </section>
 </body>
+
 </html>

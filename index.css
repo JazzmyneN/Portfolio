@@ -4,64 +4,104 @@ body {
     display: flex;
     flex-flow: column wrap;
 }
+
 header {
     position: relative;
 }
-header div.submenu {
+
+header div.submenu,
+section#work,
+section#contact,
+section#skills,
+section#about {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight : bolder;
+    font-weight: bolder;
     font-size: 1.5em;
     margin-top: 1em;
-    
+
 }
-div#profile h1,div#profile h2,div#profile h3,div#profile h4,div#profile h5 {
+
+header h1,
+header h2 {
     font-family: 'Palanquin Dark', sans-serif;
     font-style: bold;
     font-size: 2.75em;
 }
-div#profile {
 
+.me {
+    float: left;
+}
+
+.me img {
+    float: left;
+    border-radius: 15px;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+}
+
+div#profile,
+section#work,
+section#contact,
+section#skills,
+section#about {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 45vw;
-    margin-top: 2em;
+    margin-top: 5em;
     margin-left: auto;
     margin-right: auto;
     border: 7px solid black;
-    padding:.5em;
+    padding: .5em;
+}
+section#about {
+    margin-top: 15em;
 }
 div#profile {
+    margin-top: 11em;
+}
+div#profile,
+section#work,
+section#contact,
+section#skills,
+section#about {
     box-shadow: 1px 1px 0px black,
-    2px 2px 0px black,
-    3px 3px 0px black,
-    4px 4px 0px black,
-    5px 5px 0px black,
-    6px 6px 0px black,
-    7px 7px 0px black;
+        2px 2px 0px black,
+        3px 3px 0px black,
+        4px 4px 0px black,
+        5px 5px 0px black,
+        6px 6px 0px black,
+        7px 7px 0px black;
 
 }
+
 div.submenu li::before {
     content: "\f138";
     font-family: "FontAwesome";
     margin-right: 10pt;
 }
+
 div.submenu li a:hover {
     letter-spacing: 1px;
     margin-left: 0.5em;
 }
-div.submenu li a{
+
+div.submenu li a {
     transition: margin-left 300ms, letter-spacing 200ms;
 }
+
 div.submenu {
     line-height: 25pt;
-   
+
 }
+
 div#profile div.submenu a {
     color: black;
     text-decoration: none;
     background-color: rgba(255, 191, 72, 0.5);
 }
+
 div.links a {
     height: auto;
     max-height: 50px;
@@ -74,24 +114,26 @@ div.links a {
     background-color: white;
     color: black;
     border-left: 8px solid black;
-    border-top:8px solid black;
+    border-top: 8px solid black;
     border-right: 8px solid black;
     border-bottom: 8px solid white;
     padding: 10px;
     transition: max-height 300ms;
     transition-timing-function: ease-in-out;
-    
+
 }
+
 div.links a:hover {
     max-height: 1.55em;
 }
+
 a {
-    display:inline-block
+    display: inline-block
 }
 
 nav ul li a {
-    font-family: 'Work Sans', sans-serif;
-    font-weight : bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
     font-size: 1.5em;
     margin-top: 1em;
     color: black;
@@ -99,12 +141,12 @@ nav ul li a {
     text-decoration: none;
     border: 7px solid black;
     box-shadow: 1px 1px 0px black,
-    2px 2px 0px black,
-    3px 3px 0px black,
-    4px 4px 0px black,
-    5px 5px 0px black,
-    6px 6px 0px black,
-    7px 7px 0px black;
+        2px 2px 0px black,
+        3px 3px 0px black,
+        4px 4px 0px black,
+        5px 5px 0px black,
+        6px 6px 0px black,
+        7px 7px 0px black;
     transition: transform 300ms, box-shadow 150ms;
 
 }
@@ -117,23 +159,102 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
 }
+
 nav ul li a:hover {
     transform: translate(-3px, -3px);
     box-shadow: 1px 1px 0px black,
-    2px 2px 0px black,
-    3px 3px 0px black,
-    4px 4px 0px black,
-    5px 5px 0px black,
-    6px 6px 0px black,
-    7px 7px 0px black,
-    8px 8px 0px black,
-    9px 9px 0px black,
-    10px 10px 0px black;
+        2px 2px 0px black,
+        3px 3px 0px black,
+        4px 4px 0px black,
+        5px 5px 0px black,
+        6px 6px 0px black,
+        7px 7px 0px black,
+        8px 8px 0px black,
+        9px 9px 0px black,
+        10px 10px 0px black;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row wrap;
+}
+
+input[type=text]:focus {
+    outline: none;
+    background-color: rgb(235, 235, 235);
+}
+
+input[type=text] {
+    font-size: 1em;
+    transition: background-color 200ms;
+    border: 4px solid black;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    padding: .15em;
+    margin-top: 0.5em;
+}
+
+input:nth-of-type(1),
+input:nth-of-type(2) {
+    width: 47%;
+}
+
+input:nth-of-type(3) {
+    width: 98%;
+}
+
+input:nth-of-type(4) {
+    width: 98%;
+    height: 5em;
+}
+
+#skills dt {
+    padding: 0.15em;
+    background-color: rgba(255, 191, 72, 0.5);
+    width: 6em;
+    margin-top: 0.25em;
+    margin-left: 0.25em;
+}
+
+#skills dd {
+    line-height: 1.2em;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-top: 0.25em;
+    margin-left: 0.75em;
+    padding-left: 0.45em;
 }
 
 @media only screen and (min-width: 1052px) and (max-width: 1500px) {
     nav ul li {
         font-size: 0.75em;
     }
-
+}
+section h2 {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0.5em;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    border-radius: 7px;
+}
+#work {
+    display: flex;
+    flex-direction: row;
+}
+#work li {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 5px solid black;
+    overflow: hidden;
+    margin-top: 10px;
+}
+#work li p {
+    padding: 1em;
+}
+#work img {
+    width: 200px;
+    height: 100%;
 }
