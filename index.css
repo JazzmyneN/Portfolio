@@ -28,16 +28,17 @@ header h2 {
     font-size: 2.75em;
 }
 
-.me {
+.me { 
     float: left;
 }
 
 .me img {
+    margin: 5px;
     float: left;
     border-radius: 15px;
     width: 75px;
     height: 75px;
-    margin: 10px;
+    border: 5px solid black;
 }
 
 div#profile,
@@ -239,22 +240,23 @@ section h2 {
     margin-bottom: 0.5em;
     border-radius: 7px;
 }
-#work {
-    display: flex;
-    flex-direction: row;
-}
-#work li {
+
+#work ul {
     display: flex;
     width: 100%;
     height: 100%;
-    border: 5px solid black;
-    overflow: hidden;
     margin-top: 10px;
 }
-#work li p {
-    padding: 1em;
+#work ul li img {
+    border: 5px solid black;
+    flex: 0 1 50px;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    transition: height 200ms, width 200ms;
 }
-#work img {
+#work ul li img:hover {
+    overflow: hidden;
+    height: 200px;
     width: 200px;
-    height: 100%;
 }
