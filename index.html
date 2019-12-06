@@ -16,7 +16,7 @@
 <body>
     <header>
         <div id="profile">
-            <h1>Hello! I'm Jazzmyne N.</h1>
+            <h1>Hello. I'm Jazzmyne N.</h1>
             <h2>I'm a web developer in training.</h2>
 
             <div class="submenu">
@@ -44,28 +44,28 @@
         <h2>About Me</h2>
         <div class="me">
             <img src="https://avatars1.githubusercontent.com/u/53586587?s=460&v=4" id="pic" />
-            <p>I'm a student studying computer programming and web development. I plan on getting a 4 year degree in
-                Computer Science.
-                Having worked in an team based internship and classroom, I work well with others and on my own. I also
-                like doing things quickly and correctly the first time. In my free time, I like playing games and drawing.
-
+            <p>I'm a student studying computer programming and web development. I play nice with others as well as working well alone. 
+               I also learn quick. When I'm not coding, I'm either reading or playing games. Will work for peanuts and cheesesticks.
             </p>
         </div>
     </section>
     <section id="skills">
         <h2>Skills/Knowledge</h2>
         <dl>
-            <dt>HTML/CSS</dt>
-            <dd>I'm advanced in HTML and CSS, along with other general web development aspects like responsive layouts
-                and website design.</dd>
+            <dt>Frontend</dt>
+            <dd>This is what I'm most familiar and comfortable with. Anything to do with the face of the website (HTML, CSS, Javascript)
+                are all things I'm experienced with.
+            </dd>
 
-            <dt>Git</dt>
-            <dd>I know how to work with version control, specifcally git, including pull requests and reviewing commits.
-                This also includes of knowledge of working with other's code.</dd>
+            <dt>Backend</dt>
+            <dd>PHP, Python, and Node.js are all programs I'm beginning to learn and grow familar with. I can make a product using these 
+                programs, but the process may be slower than the Frontend activities.
+            </dd>
 
-            <dt>Python3</dt>
-            <dd>Before web design, I worked with Python. I know how to manuvere object oriented programming and can
-                automate busy work.</dd>
+            <dt>Misc.</dt>
+            <dd>I'm can work with Python, C#, and Excel to automate various things. This includes HTTP request testing,
+                and sorting large amounts of data.
+            </dd>
         </dl>
     </section>
 
@@ -82,10 +82,11 @@
     </section>
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="First Name"> <input type="text" placeholder="Last Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Explain what you'd like done...">
+        <form action = "" method = "POST">
+            <input required type="text" placeholder="First Name"> <input type="text" placeholder="Last Name">
+            <input required pattern = "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" type="email" placeholder="Email">
+            <textarea required placeholder="Explain what you'd like done..."></textarea>
+            <button type = "sumbit">Send away</button>
         </form>
     </section>
 </body>
