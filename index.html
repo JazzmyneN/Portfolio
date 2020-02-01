@@ -5,90 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark|Work+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Jazzmyne N.</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
-    <link href="index.css" rel="stylesheet" />
-    <link href="reset.css" rel="stylesheet" />
-    <title>Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <div id="profile">
-            <h1>Hello. I'm Jazzmyne N.</h1>
-            <h2>I'm a web developer in training.</h2>
+    <div class="card">
+        <div class="cardText">
+            <h2>Hi, I'm <span id="name">Jazzmyne N.</span></h2>
+            <h3>I'm a web developer in training.</h3>
+        </div>
+        <hr>
+        <div class="cardIcons">
+            <a href="https://github.com/JazzmyneN">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:njazzmyne21@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
 
-            <div class="submenu">
-                Current endeavors:
+    <div class="workContainer">
+        <div class="work">
+            <img
+                src="https://tonnygaric.com/media/pages/blog/first-time-participating-in-advent-of-code/2028434015-1552215026/first-time-participating-in-advent-of-code.png">
+            <div class="workText">
+                <h2>Advent of Code Solutions</h2>
+                <p>Advent of Code is a free set of coding puzzles made by Eric Wastl. This is my repository of the
+                    solutions as I work through years 2016 to 2019.
+                </p>
                 <ul>
-                    <li><a href="https://west-mec.edu/coding/">WestMEC Coding Program</a></li>
-                    <li>Coding Internship w/ <a href="https://github.com/linuxdream">Brandon Ching</a></li>
+                    <li>HTML/CSS</li>
+                    <li>Javascript</li>
                 </ul>
             </div>
-            <div class="links">
-                <a href="https://github.com/JazzmyneN"><i class="fab fa-github"></i></a>
+        </div>
+
+        <div class="work"id = "pokemon">
+            <img
+                src="https://files.realpython.com/media/Screenshot_2019-06-24_16.54.45.e646867e4dbb.png">
+            <div class="workText">
+                <h2>Pokémon  Catalog</h2>
+                <p>This was a personal project; it's an excel spreadsheet that can be used to sort competitive Pokémon.
+                    It uses some web scraping for the images and excel formulas to connect them with their respective Pokémon. 
+                </p>
+                <ul>
+                    <li>Excel</li>
+                    <li>Web Scraping</li>
+                </ul>
             </div>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="me">
-            <img src="https://avatars1.githubusercontent.com/u/53586587?s=460&v=4" id="pic" />
-            <p>I'm a student studying computer programming and web development. I play nice with others as well as working well alone. 
-               I also learn quick. When I'm not coding, I'm either reading or playing games. Will work for peanuts and cheesesticks.
-            </p>
+
+        <div class="work"id = "pokemon">
+            <img
+                src="https://cdn.discordapp.com/attachments/665310131294175252/666086784760938509/wyvrenairlinestransparent.png">
+            <div class="workText">
+                <h2>Fake Airline Website V.1</h2>
+                <p>This was for FBLA regionals, and was done very last minute; despite that, it's pretty nice. Albeit simple.
+                    I plan to flesh this out in the future.
+                </p>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
         </div>
-    </section>
-    <section id="skills">
-        <h2>Skills/Knowledge</h2>
-        <dl>
-            <dt>Frontend</dt>
-            <dd>This is what I'm most familiar and comfortable with. Anything to do with the face of the website (HTML, CSS, Javascript)
-                are all things I'm experienced with.
-            </dd>
 
-            <dt>Backend</dt>
-            <dd>PHP, Python, and Node.js are all programs I'm beginning to learn and grow familar with. I can make a product using these 
-                programs, but the process may be slower than the Frontend activities.
-            </dd>
-
-            <dt>Misc.</dt>
-            <dd>I'm can work with Python, C#, and Excel to automate various things. This includes HTTP request testing,
-                and sorting large amounts of data.
-            </dd>
-        </dl>
-    </section>
-
-    <section id="work">
-        <h2>Previous Work</h2>
-        <ul>
-            <li>
-                <a href = "https://jazzmynen.github.io/PokemonProject/index.html"><img src = "pikachu.png"></a>
-            </li>
-            <li>
-                <a href = "https://jazzmynen.github.io/BigDaveChopShop/founded.html"><img src = "bigdave.png"></a>
-            </li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action = "" method = "POST">
-            <input required type="text" placeholder="First Name"> <input type="text" placeholder="Last Name">
-            <input required pattern = "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" type="email" placeholder="Email">
-            <textarea required placeholder="Explain what you'd like done..."></textarea>
-            <button type = "sumbit">Send away</button>
-        </form>
-    </section>
+    </div>
 </body>
 
 </html>
