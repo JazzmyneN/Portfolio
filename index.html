@@ -1,82 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jazzmyne N.</title>
+    <meta name="description" content="Jazzmyne Nixon UX/UI Portfolio">
+    <link rel="icon" type="image/png" href="https://example.com/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/426b7f2dc3.js" crossorigin="anonymous"></script>
+    <title>Jazzmyne Nixon</title>
+    <script src ="vanilla-tilt.js"></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
-    <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
+
 </head>
-
 <body>
-    <div class="card">
-        <div class="cardText">
-            <h2>Hi, I'm <span id="name">Jazzmyne N.</span></h2>
-            <h3>I'm a web developer in training.</h3>
+    <div class = "firstrow">
+        <div  data-tilt data-tilt-reverse="true" class = "box" id = "intro">
+            <h2>Jazzmyne Nixon</h2>
+            <p>I'm an aspiring:</p>
+            <h1>UI/UX Designer</h1>
+            <h1>Web Developer</h1>
         </div>
-        <hr>
-        <div class="cardIcons">
-            <a href="https://github.com/JazzmyneN">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:njazzmyne21@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
+        <div data-tilt data-tilt-reverse="true" class = "box" class = "box" id = "work">
+            <h1>Thing's I've Done:</h1>
+            <ul>
+                <li><a href = "">Advent of Code</a></li>
+                <li><a href = "">Website Recreation/Redesign</a></li>
+                <li><a href = "">Tumblr Custom Themes</a></li>
+            </ul>
         </div>
     </div>
-
-    <div class="workContainer">
-        <div class="work">
-            <img
-                src="https://tonnygaric.com/media/pages/blog/first-time-participating-in-advent-of-code/2028434015-1552215026/first-time-participating-in-advent-of-code.png">
-            <div class="workText">
-                <h2>Advent of Code Solutions</h2>
-                <p>Advent of Code is a free set of coding puzzles made by Eric Wastl. This is my repository of the
-                    solutions as I work through years 2016 to 2019.
-                </p>
+    <div class = "secondrow">
+        <div data-tilt data-tilt-reverse="true" class = "box" class = "box" id = "contact">
+            <h1>Get in touch:</h1>
+            <ul>
+                <li><i class="fab fa-github-square"></i><a href = "">GitHub</a></li>
+                <li><i class="fab fa-behance-square"></i><a href = "">Behance</a></li>
+                <li><i class="fas fa-envelope-square"></i><a href = "">bandelby02@gmail.com</a></li>
+            </ul>
+        </div>
+        <div data-tilt data-tilt-reverse="true" class = "box" class = "box" id = "skills">
+            <h1>Skills/Qualifications</h1>
+            <div class = "twocolumn">
                 <ul>
+                    <li>Figma</li>
                     <li>HTML/CSS</li>
                     <li>Javascript</li>
                 </ul>
-            </div>
-        </div>
-
-        <div class="work"id = "pokemon">
-            <img
-                src="https://files.realpython.com/media/Screenshot_2019-06-24_16.54.45.e646867e4dbb.png">
-            <div class="workText">
-                <h2>Pokémon  Catalog</h2>
-                <p>This was a personal project; it's an excel spreadsheet that can be used to sort competitive Pokémon.
-                    It uses some web scraping for the images and excel formulas to connect them with their respective Pokémon. 
-                </p>
                 <ul>
-                    <li>Excel</li>
-                    <li>Web Scraping</li>
+                    <li>Microsoft Certification</li>
+                    <li>WestMec 2 Year Coding Program</li>
                 </ul>
             </div>
         </div>
-
-
-        <div class="work"id = "pokemon">
-            <img
-                src="https://cdn.discordapp.com/attachments/665310131294175252/666086784760938509/wyvrenairlinestransparent.png">
-            <div class="workText">
-                <h2>Fake Airline Website V.1</h2>
-                <p>This was for FBLA regionals, and was done very last minute; despite that, it's pretty nice. Albeit simple.
-                    I plan to flesh this out in the future.
-                </p>
-                <ul>
-                    <li>HTML/CSS</li>
-                    <li>Javascript</li>
-                </ul>
-            </div>
-        </div>
-
     </div>
+    <script src ="vanilla-tilt.js"></script>
 </body>
-
 </html>

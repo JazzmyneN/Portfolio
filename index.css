@@ -1,192 +1,138 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
-
-/* font-family: "Source Code Pro", monospace; *
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-*/
+html {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
 body {
-    background: -moz-linear-gradient(21deg, rgba(255, 241, 131, 1) 0%, rgba(152, 238, 255, 1) 100%);
-    background: -webkit-linear-gradient(21deg, rgba(255, 241, 131, 1) 0%, rgba(152, 238, 255, 1) 100%);
-    background: linear-gradient(21deg, rgba(255, 241, 131, 1) 0%, rgba(152, 238, 255, 1) 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
 }
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: rgba(255, 241, 131, 1); 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgba(152, 238, 255, 1); 
-  }
-.card {
-    margin: 10%;
-    width: 350px;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 15px;
+.box {
+    width: 50vw;
+    height: 50vh;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    color: rgb(131, 131, 131);
-    animation: fadeInUp 1.75s forwards ease-in-out;
-    -webkit-box-shadow: 0px 1px 23px 7px rgba(0, 0, 0, 0.103);
-    box-shadow: 0px 1px 23px 7px rgba(0, 0, 0, 0.103);
-}
-
-.cardText {
-    text-align: center;
-    padding: 0% 5%;
-    font-family: 'Open Sans', sans-serif;
-}
-
-hr {
-    width: 50%;
-    align-self: center;
-}
-
-hr+.cardIcons:hover {
-    width: 90%;
-}
-
-.cardIcons {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 0% 5%;
-    font-size: 20pt;
-    padding-bottom: 1em;
-    font-family: 'Open Sans', sans-serif;
+    position: relative;
 }
-
-.cardIcons i {
-    color: rgb(131, 131, 131);
-    border: 1px solid rgb(131, 131, 131);
-    border-radius: 100px;
-    padding: .5em;
-    transition: color .2s, border .2s, transform .3s;
+.firstrow {
+    width: 100vw;
+    flex-wrap: wrap;
 }
-
-.cardIcons i:hover {
-    transform: rotate(-40deg);
-    color: rgb(97, 155, 167);
-    border: 1px solid rgb(240, 219, 36);
+.secondrow,
+.firstrow {
+    flex-direction: row !important;
 }
-
-hr {
-    margin: 3% 0%;
+#intro {
+    background-color: #C5E3F4;
+    color: #82AEC7;
 }
-
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    padding-top: 1em;
-    font-size: 26pt;
+#intro p {
+    padding-top: 30px;
 }
-
-h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15pt;
-    padding: 1% 0;
+#intro h1 {
+    padding-top: 15px;
 }
-.workContainer {
+#work {
+    background-color: #EEE7CF;
+    color: #D7C072;
+}
+#contact {
+    background-color: #FFBCBC;
+    color: #CD7878;
+}
+#contact li,
+#work li {
+    padding-top: 2em;
+}
+#skills {
+    background-color: #D0EECF;
+    color: #A5D0A3;
+}
+#skills .twocolumn {
+    padding-top: 5em;
+}
+#skills ul {
     width: 50%;
-    margin-top: 100px;
-    animation: fadeInUp 1.75s forwards ease-in-out;
-
 }
-.work {
-    -webkit-box-shadow: 0px 1px 23px 7px rgba(0, 0, 0, 0.103);
-    box-shadow: 0px 1px 23px 7px rgba(0, 0, 0, 0.103);
-    animation: fadeInUp 2s forwards ease-in-out;
-    padding: 1em;
-    border-radius: 15px;
-    background-color: white;
-    display: flex;
-    list-style: none;
-   margin-bottom: 3em;
+#skills li {
+    padding: 0.25em;
 }
-.work img {
-    align-self: center;
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
+#skills ul:first-of-type {
+    text-align: right;
+    padding-right: 20px;
 }
-.work li, .work p {
-    margin: 10px 0px;
-    font-family: 'Open Sans', sans-serif;
+#skills ul:nth-of-type(2) {
+    padding-left: 20px;
 }
-.workText {
-    width: 100%;
-    padding: 1em;
-    align-items: center;
-}
-.workText h2 {
-    margin: 10px 0px;
-    padding-top: 0px;
-}
-.workText ul {
-    display: flex;
-}
-.workText li{
-    padding: 10px;
-    border-radius: 10px;
-
-    
-    background: -moz-linear-gradient(21deg, rgba(255, 241, 131, 1) 0%, rgba(152, 238, 255, 1) 100%);
-    background: -webkit-linear-gradient(21deg, rgba(255, 241, 131, 1) 0%, rgba(152, 238, 255, 1) 100%);
-    background: linear-gradient(21deg, rgba(255, 241, 131, 1) 0%, rgba(152, 238, 255, 1) 100%);
-}
-.workText li:nth-of-type(2) {
-    margin-left: 15px;
-}
-#pokemon {
-    animation-delay: .5s;
-}
-body:before {
-    content: "";
+h1 {
     position: absolute;
     top: 0;
-    bottom: 0;
-    z-index: -999;
-    left: -250px;
-    width: 50%;
-    background: -moz-linear-gradient(21deg, rgba(255, 241, 131, 1) 0%, rgba(152, 238, 255, 1) 100%);
-    background: -webkit-linear-gradient(21deg, rgba(255, 241, 131, 1) 0%, rgba(152, 238, 255, 1) 100%);
-    background: linear-gradient(21deg, rgba(255, 241, 131, 1) 0%, rgba(152, 238, 255, 1) 100%);
-    transform: skew(-50deg);
+    margin-top: 30px;
+    font-size: 30pt;
+}
+#intro h1 {
+ position: static;
+ margin-top: 1px;
+}
+h2 {
+    font-size: 29pt;
+}
+p {
+    font-size: 20pt;
+}
+a {
+    text-decoration: none;
+}
+body {
+    display: flex;
+    overflow: hidden;
+}
+li a,
+li {
+    font-size: 25pt;
+}
+#work li a {
+    color: #D7C072;
+}
+#contact li a {
+    color: #CD7878;
+}
+.twocolumn {
+    display: flex;
+}
+.twocolumn ul:first-of-type {
+    border-right: 3px solid #A5D0A3;
+}
+#work li:before {
+    content: '\2B50';
+    margin-right: 10px;
+}
+.fab, .fas {
+    margin-right: 25px;
+    font-size: 30pt;
+}
+#contact a {
+    background: linear-gradient(90deg, rgba(255,155,155,1) 0%, rgba(255,155,155,1) 100%);
+
+    background-size: 0%;
+    background-repeat: no-repeat;
+    display: inline;
+    transition: 0.5s ease;
+  }
+  
+  #contact a:hover {
+    background-size: 100%;
 }
 
-@-webkit-keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
+#work a {
+    background: linear-gradient(90deg, rgba(255,221,104,1) 0%, rgba(255,221,104,1) 100%);
 
-    to {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-
-    to {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
+    background-size: 0%;
+    background-repeat: no-repeat;
+    display: inline;
+    transition: 0.5s ease;
+  }
+  
+  #work a:hover {
+    background-size: 100%;
 }
